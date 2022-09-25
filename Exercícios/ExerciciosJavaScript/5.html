@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+        var N = parseInt(prompt("Informe o número de entradas:"));
+
+        function verifica (N) {
+            
+        var soma = 0;
+        var cont = N;
+    
+        for (var i = 1; i <= N; i++) {
+            var x = parseInt(prompt("Informe um número inteiro (Faltam " + cont + " entradas)"));
+            soma += x;
+            cont--;
+        }
+
+        document.write(soma);
+        }
+
+        verifica(N);
+        
+    </script>
+</body>
+</html>
