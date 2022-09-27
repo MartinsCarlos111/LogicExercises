@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = prompt("Digite um numero: ");
+        var result = 0;
+        var paridade = 0;
+        var aux =0;
+
+        while (n > 0){
+            result = Math.floor (n / 2);
+            aux = n % 2;
+
+            if(aux != 0){
+                paridade++;
+
+                n = result;
+            }
+
+            else{
+                n = result;
+            }
+        }
+
+        alert("A paridade é " + paridade)
+    </script>
+</body>
+</html>
